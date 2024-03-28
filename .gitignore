@@ -23,6 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-
 .env
-./src/utils/constants.jsx
