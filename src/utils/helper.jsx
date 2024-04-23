@@ -22,27 +22,10 @@ var nameList = [
     'Legacy', 'Sharp', 'Dead', 'Mew', 'Chuckle', 'Bubba', 'Bubble', 'Sandwich', 'Smasher', 'Extreme', 'Multi', 'Universe', 'Ultimate', 'Death', 'Ready', 'Monkey', 'Elevator', 'Wrench', 'Grease', 'Head', 'Theme', 'Grand', 'Cool', 'Kid', 'Boy', 'Girl', 'Vortex', 'Paradox'
   ];
 
-
-  // For Generate Random Names
-
-// const nameList2 = [
-//     "Krishan Kant", "Chandar Mani Kant", "Ankush", "Ravi", "Akash", "Gaurav", "keshav", "Krishan Sharma", "Hemant", "Arun", "Kartik", "Gulshan","Vineet", "Pankaj", "Mia","Dani Denial", "Anjali", "Prince", "Sandeep","Nasir"
-// ];
-
  export function generateRandomName() {
      return nameList[Math.floor(Math.random() * nameList.length)];
 };
 
-
-// Generate Random Messages
-
-// const msgArr = [
-//   "Hii","Namaste","Mai jadoo hu mujhe dhoop chaiye","Sabaas Bete","Meri bhi sun lo koi","kese ho","Kesi lag rhi hu","m to hagne ja rha hu","Kya baat hai","Mai ja rha hu hilane","Kaam Kar apna","Chai pi lo guyz","Anjali m tere bina nhi rh skta","Maqsad nhi bhulna","Jokes apart guys i'm pro khilada"
-// ];
-
-// export function generateRandomMsg() {
-//   return msgArr[Math.floor(Math.random() * msgArr.length)];
-// };
 
 export function makeRandomMessages(length) {
     let result = '';
@@ -57,3 +40,17 @@ export function makeRandomMessages(length) {
 }
 
 
+// For Generate Random Names
+// const nameList2 = [
+//     "Krishan Kant", "Chandar Mani Kant", "Ankush", "Ravi", "Akash", "Gaurav", "keshav", "Krishan Sharma", "Hemant", "Arun", "Kartik", "Gulshan","Vineet", "Pankaj", "Mia","Dani Denial", "Anjali", "Prince", "Sandeep","Nasir"
+// ];
+
+
+// Generate Random Messages
+// const msgArr = [
+//   "Hii","Namaste","Mai jadoo hu mujhe dhoop chaiye","Sabaas Bete","Meri bhi sun lo koi","kese ho","Kesi lag rhi hu","m to hagne ja rha hu","Kya baat hai","Mai ja rha hu hilane","Kaam Kar apna","Chai pi lo guyz","Anjali m tere bina nhi rh skta","Maqsad nhi bhulna","Jokes apart guys i'm pro khilada"
+// ];
+
+// export function generateRandomMsg() {
+//   return msgArr[Math.floor(Math.random() * msgArr.length)];
+// };
