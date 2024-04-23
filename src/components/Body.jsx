@@ -4,11 +4,11 @@ import { Outlet } from 'react-router-dom'
 
 const Body = () => {
   return (
-    <div className='flex bg-black text-white'>
-        <Sidebar />
-        <Outlet />
+    <div className="flex h-screen overflow-y-hidden no-scrollbar text-white">
+      <Sidebar />
+      <Outlet />
     </div>
-  )
+  );
 }
 
 export default Body
