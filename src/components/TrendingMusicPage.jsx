@@ -24,7 +24,6 @@ function TrendingMusicPage() {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      // console.log(result);
       setTrending(result);
     } catch (error) {
       console.error(error);
@@ -39,7 +38,7 @@ function TrendingMusicPage() {
 
   return (
     <div className="w-fit h-screen overflow-y-scroll">
-      <div className="mx-20 my-2">
+      <div className="mx-20 my-5">
         <h1 className="text-3xl font-bold">Trending</h1>
       </div>
       <div className="sm:flex sm:flex-col sm:justify-center sm:items-center md:flex md:justify-center md:h-screen md:flex-wrap no-scrollbar">
@@ -48,11 +47,6 @@ function TrendingMusicPage() {
         }
       </div>
     </div>
-    // <div className="bg-red-300 grid grid-cols-4 overflow-y-scroll md:grid md:grid-cols-5 no-scrollbar">
-    //     {trending &&
-    //       trending.map((data,index)=><Link to={"/watch?v="+data.videoId} ><TrendingMusicVideos key={index} trending={data} /></Link>)
-    //     }
-    //   </div>
   );
 }
 
