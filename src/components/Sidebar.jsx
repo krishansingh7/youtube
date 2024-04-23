@@ -8,11 +8,9 @@ const Sidebar = () => {
   // Early Returning
   if (!isOpenMenu) return null;
 
-  // Remover => remove h-screen form sidebar
-
   return (
-    <div className="hidden sm:text-slate-200 sm:w-[21vmax] sm:px-2 sm:shadow-xl sm:h-[calc(100vh-6.1vh)] sm:overflow-y-scroll sm:absolute sm:block sm:bg-black md:static ">
-      <ul className="border-b-2 border-gray-400 sm:flex sm:flex-col sm:gap-1 md:gap-1 cursor-pointer sm:font-semibold sm:my-2 sm:ml-2 sm:truncate">
+    <div className="overflow-y-hidden no-scrollbar absolute h-screen bg-black w-[18vmax] md:absolute sm:text-slate-200 sm:w-[20vmax] sm:px-2 sm:shadow-xl sm:h-[calc(100%-76px)] sm:overflow-y-scroll sm:absolute  ">
+      <ul className="border-b-2 flex flex-col gap-7 border-gray-400  md:gap-1 cursor-pointer sm:font-semibold sm:my-2 sm:ml-2 sm:truncate">
         <Link to="/">
           <li className="flex gap-5 items-center sm:h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
             <svg
@@ -30,22 +28,22 @@ const Sidebar = () => {
           </li>
         </Link>
         <Link to="/trending">
-        <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
-            viewBox="0 0 24 24"
-            height="1.4em"
-            width="2em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path fill="none" d="M0 0h24v24H0z"></path>
-            <path d="M12 12.9l-2.13 2.09c-.56.56-.87 1.29-.87 2.07C9 18.68 10.35 20 12 20s3-1.32 3-2.94c0-.78-.31-1.52-.87-2.07L12 12.9z"></path>
-            <path d="M16 6l-.44.55C14.38 8.02 12 7.19 12 5.3V2S4 6 4 13c0 2.92 1.56 5.47 3.89 6.86-.56-.79-.89-1.76-.89-2.8 0-1.32.52-2.56 1.47-3.5L12 10.1l3.53 3.47c.95.93 1.47 2.17 1.47 3.5 0 1.02-.31 1.96-.85 2.75 1.89-1.15 3.29-3.06 3.71-5.3.66-3.55-1.07-6.9-3.86-8.52z"></path>
-          </svg>
-          <h2>Trending</h2>
-        </li>
+          <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 24 24"
+              height="1.4em"
+              width="2em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M12 12.9l-2.13 2.09c-.56.56-.87 1.29-.87 2.07C9 18.68 10.35 20 12 20s3-1.32 3-2.94c0-.78-.31-1.52-.87-2.07L12 12.9z"></path>
+              <path d="M16 6l-.44.55C14.38 8.02 12 7.19 12 5.3V2S4 6 4 13c0 2.92 1.56 5.47 3.89 6.86-.56-.79-.89-1.76-.89-2.8 0-1.32.52-2.56 1.47-3.5L12 10.1l3.53 3.47c.95.93 1.47 2.17 1.47 3.5 0 1.02-.31 1.96-.85 2.75 1.89-1.15 3.29-3.06 3.71-5.3.66-3.55-1.07-6.9-3.86-8.52z"></path>
+            </svg>
+            <h2>Trending</h2>
+          </li>
         </Link>
         <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
           <svg
@@ -61,28 +59,28 @@ const Sidebar = () => {
           </svg>
           <h2>Shoping</h2>
         </li>
-        
-          <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
-            <svg
-              stroke="currentColor"
+
+        <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 24 24"
+            height="1.4em"
+            width="2em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M12 8.95439L17.6352 7.82736C19.0102 7.55235 20 6.34501 20 4.94274C20 3.08637 18.3017 1.69406 16.4813 2.05813L12.4117 2.87206C11.0094 3.15252 10 4.38376 10 5.8138V13.8895C9.41165 13.5492 8.72857 13.3544 8 13.3544C5.79086 13.3544 4 15.1453 4 17.3544C4 19.5635 5.79086 21.3544 8 21.3544C10.2091 21.3544 12 19.5635 12 17.3544V8.95439ZM16.8736 4.01929L12.8039 4.83322C12.3365 4.92671 12 5.33712 12 5.8138V6.91479L17.2429 5.8662C17.6831 5.77816 18 5.39165 18 4.94274C18 4.34846 17.4563 3.90274 16.8736 4.01929ZM10 17.3544C10 16.2498 9.10457 15.3544 8 15.3544C6.89543 15.3544 6 16.2498 6 17.3544C6 18.459 6.89543 19.3544 8 19.3544C9.10457 19.3544 10 18.459 10 17.3544Z"
               fill="currentColor"
-              strokeWidth="0"
-              viewBox="0 0 24 24"
-              height="1.4em"
-              width="2em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path fill="none" d="M0 0h24v24H0z"></path>
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M12 8.95439L17.6352 7.82736C19.0102 7.55235 20 6.34501 20 4.94274C20 3.08637 18.3017 1.69406 16.4813 2.05813L12.4117 2.87206C11.0094 3.15252 10 4.38376 10 5.8138V13.8895C9.41165 13.5492 8.72857 13.3544 8 13.3544C5.79086 13.3544 4 15.1453 4 17.3544C4 19.5635 5.79086 21.3544 8 21.3544C10.2091 21.3544 12 19.5635 12 17.3544V8.95439ZM16.8736 4.01929L12.8039 4.83322C12.3365 4.92671 12 5.33712 12 5.8138V6.91479L17.2429 5.8662C17.6831 5.77816 18 5.39165 18 4.94274C18 4.34846 17.4563 3.90274 16.8736 4.01929ZM10 17.3544C10 16.2498 9.10457 15.3544 8 15.3544C6.89543 15.3544 6 16.2498 6 17.3544C6 18.459 6.89543 19.3544 8 19.3544C9.10457 19.3544 10 18.459 10 17.3544Z"
-                fill="currentColor"
-              ></path>
-            </svg>
-            <h2>Music</h2>
-          </li>
-       
+            ></path>
+          </svg>
+          <h2>Music</h2>
+        </li>
+
         <li className="flex gap-5 items-center h-[3vmax] p-2 hover:bg-[#242424] rounded-lg">
           <svg
             stroke="currentColor"
@@ -206,12 +204,6 @@ const Sidebar = () => {
           <h2>Podcast</h2>
         </li>
       </ul>
-      {/* <ul className="p-2 cursor-pointer font-semibold border-b-2 my-2">
-        <li>Music</li>
-        <li>Gaming</li>
-        <li>Sports</li>
-        <li>Movies</li>
-      </ul> */}
     </div>
   );
 };
