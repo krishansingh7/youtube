@@ -31,7 +31,7 @@ const WatchPage = () => {
           <h1>Add Comments Section!!</h1>
         </div>
       </div>
-      <div className="mx-1 mt-[-2vmax] md:mt-0 lg:w-[calc(100%-700px)]">
+      <div className="hidden mx-1 md:block md:mt-0 lg:w-[calc(100%-700px)]">
         <LiveChat />
       </div>
     </div>
