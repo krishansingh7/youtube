@@ -3,6 +3,9 @@ import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/redux/navSlice";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { FaMicrophone } from "react-icons/fa";
+import ytLogo from "../assets/yt-logo.png";
+import menuLogo from "../assets/m2.jpg";
+import ytMobileLogo from "../assets/yt-logo-mobile.png"
 
 const Header = () => {
 
@@ -40,16 +43,17 @@ const Header = () => {
       <div className="flex ml-2 col-span-1 items-center cursor-pointer">
         <img
           className="h-6 mr-4 ml-1"
-          src="../src/assets/m2.jpg"
+          src={menuLogo}
           alt="menu"
           onClick={() => handleToggleMenu()}
         />
         <a href="/">
           <img
             className="hidden h-2 md:h-5 bg-[#0f0f0f] md:block"
-            src="../src/assets/yt-logo.png"
+            src={ytLogo}
             alt="youtube"
           />
+          {/* <img src={ytMobileLogo} className="w-9 rounded-3xl md:hidden" /> */}
         </a>
       </div>
       <div className="flex sm:flex items-center justify-center col-span-8 text-center">
@@ -127,12 +131,9 @@ const Header = () => {
         </svg>
         <img
           src="https://avatars.githubusercontent.com/u/115705643?v=4"
-          className="hidden sm:block sm:w-10 sm:rounded-3xl md:w-10 md:rounded-3xl"
+          className="hidden md:block sm:w-10 sm:rounded-3xl md:w-10 md:rounded-3xl"
         />
-        <img
-          src="../src/assets/yt-logo-mobile.png"
-          className=" w-9 rounded-3xl sm:hidden"
-        />
+        <img src={ytMobileLogo} className=" w-9 rounded-3xl md:hidden" />
       </div>
     </div>
   );
