@@ -133,7 +133,9 @@ const Header = () => {
           src="https://avatars.githubusercontent.com/u/115705643?v=4"
           className="hidden md:block sm:w-10 sm:rounded-3xl md:w-10 md:rounded-3xl"
         />
+        <a href="/">
         <img src={ytMobileLogo} className=" w-9 rounded-3xl md:hidden" />
+        </a>
       </div>
     </div>
   );
